@@ -8,11 +8,6 @@
         {{- /* Meta */ -}}
         <div class="post-meta">
             <div class="post-meta-main">
-                {{- $author := .Params.author | default .Site.Author.name -}}
-                {{- $author_link := .Params.author_link | default .Site.Author.link | default .Site.BaseURL -}}
-                <a class="author" href="{{ $author_link }}" rel="author" target="_blank">
-                    <i class="fas fa-user-circle fa-fw"></i>{{ $author }}
-                </a>&nbsp;
                 {{- with .Params.categories -}}
                     <span class="post-category">
                         {{- T "included" -}}&nbsp;
